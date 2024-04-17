@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Girassol", serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: rgb(76, 79, 255);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+
+.logo{
+    width: 50%;
+}
+
+.logo img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 50%;
+    color: rgb(0, 0, 0);
+
+}
+
+.menu nav a{
+    color:black;
+    text-decoration: none;
+    padding-right: 60px;
+    font-size: 20px;
+    position: relative;
+}
+
+html,body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.menu nav a::after{
+    content: " " ;
+    width: 0px;
+    height: 6px;
+    background-image: linear-gradient(45deg, #808080, #000000);
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    transition: width 0.5s;
+
+}
+
+.menu a:hover::after{
+    width: 30px;
+
+}
+
+section.sobre{
+    position: relative;
+    height: calc(100% - 200px);
+}
+
+.extras{
+    position: absolute;
+    bottom: -550px;
+    right: -400px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: #46b1e5;
+
+}
