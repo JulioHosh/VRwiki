@@ -16,7 +16,7 @@
 }
 
 header{
-    background-color: rgb(76, 79, 255);
+    background-color: hsl(233, 98%, 62%);
     width: 100%;
     padding: 20px;
     height: 200px;
@@ -48,6 +48,7 @@ header{
 html,body{
     height: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .menu nav a::after{
@@ -65,4 +66,30 @@ html,body{
 .menu a:hover::after{
     width: 30px;
 
+}
+
+section.sobre{
+    position: relative;
+    height: calc(100% - 200px);
+}
+
+.extras{
+    position: absolute;
+    bottom: -550px;
+    right: -400px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: #46b1e5;
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+}
+
+}
+
+.dropdown-menu a{
+    display: block;
+    
 }
