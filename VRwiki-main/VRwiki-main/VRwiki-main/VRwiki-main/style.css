@@ -16,7 +16,7 @@
 }
 
 header{
-    background-color: hsl(233, 98%, 62%);
+    background-color: rgb(76, 79, 255);
     width: 100%;
     padding: 20px;
     height: 200px;
@@ -82,14 +82,4 @@ section.sobre{
     border-radius: 50%;
     background-color: #46b1e5;
 
-.dropdown-menu{
-    position: absolute;
-    box-shadow: 0 0 2px black;
-}
-
-}
-
-.dropdown-menu a{
-    display: block;
-    
 }
